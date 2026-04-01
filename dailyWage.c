@@ -12,12 +12,10 @@ int main() {
     }
 
     if (hours > 8) {
-        // 8 ώρες με κανονικό μισθό + οι υπόλοιπες με υπερωρία
         total = (8 * hourly_rate) + ((hours - 8) * overtime_rate);
         printf("You worked overtime! Your wage today is: %d $\n", total);
     } 
     else if (hours > 0) {
-        // Πληρωμή μόνο για τις ώρες που δούλεψε (έως 8)
         total = hours * hourly_rate;
         printf("Your wage today is: %d $\n", total);
     } 
